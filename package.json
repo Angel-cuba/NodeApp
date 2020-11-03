@@ -1,0 +1,25 @@
+{
+  "name": "NodeApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "http.js",
+  "scripts": {
+    "start": "node http"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angel-cuba/NodeApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Angel-cuba/NodeApp/issues"
+  },
+  "homepage": "https://github.com/Angel-cuba/NodeApp#readme",
+  "dependencies": {
+    "cowsay": "^1.4.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
