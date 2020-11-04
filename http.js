@@ -5,9 +5,18 @@ const app = express();
 const port = 3000;
 //process.env.PORT || 
 
+const mongoose = require('mongoose');
 
+const user = 'AngelData';
+const password = 'OBLMgprb0CZbzt4W';
+const dbname = 'veterinaria';
+const uri = `mongodb+srv://${user}:${password}@cluster0.lquq3.mongodb.net/${dbname}?retryWrites=true&w=majority`;
 
-
+  mongoose.connect(uri,
+    { useNewUrlParser: true, useUnifiedTopology: true }
+    )
+    .then(() => console.log('Base de datos conectada'))
+    .catch(e => console.log(e))
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
