@@ -21,7 +21,7 @@
                             <th scope="row"><%= mascota.id %> </th>
                             <td><%= mascota.nombre %> </td>
                             <td><%= mascota.texto %> </td>
-                            <td>@mdo</td>
+                            <td><%= mascota.descripcion %> </td>
                           </tr>
                      
                     <% }) %>
@@ -31,7 +31,11 @@
             </tbody>
           </table>
       
-    </div>
+    </div><%- include("template/card") %> 
+<div class="card">
+    
+</div>
+    
 
 
 <%- include("template/footer") %>
