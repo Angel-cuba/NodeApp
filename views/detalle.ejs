@@ -94,10 +94,7 @@
 
     <% } %>
 
-<div class="card">
-    <%- include("template/card") %> 
-</div>
-    
+
 
 
 <%- include("template/footer") %>
@@ -159,7 +156,12 @@
                 })
             })
             const res = await data.json()
-            console.log(res)
+           
+            if(res.estado){
+                window.location.href = '/mascotas'
+            }else{
+                console.log(res)
+            }
 
            }catch(error){
                console.log(error)

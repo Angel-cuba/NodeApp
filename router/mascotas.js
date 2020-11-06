@@ -17,13 +17,6 @@ router.get('/', async(req, res) => {
     }catch(error){
         console.log(error)
     }
-    //res.render("mascotas", {
-        //arrayMascotas: [
-            //{id: 'avfva', nombre: 'perro', texto: 'kjanvanve'},
-            //{id: 'jdjdf', nombre: 'gato', texto: 'fbbbrsbrw'},
-          //  {id: 'adddd', nombre: 'perico', texto: 'yeyteteanve'} 
-        //]
-   // })
 })
 
 
