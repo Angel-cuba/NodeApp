@@ -4,6 +4,12 @@
    
 
     <div class="container">
+        <h1>CRUD MongoDB</h1>
+        <a class="btn btn-success btn-block my-4"
+            href="/mascotas/crear"
+        >
+        Crear nueva mascota
+        </a>
         <table class="table">
             <thead>
               <tr>
@@ -22,6 +28,14 @@
                             <td><%= mascota.nombre %> </td>
                             <td><%= mascota.texto %> </td>
                             <td><%= mascota.descripcion %> </td>
+                            <td>
+                                <a 
+                                href="mascotas/<%= mascota.id %> " 
+                                class="btn btn-warning btn-sm"
+                                >
+                                    Editar
+                                </a>
+                            </td>
                           </tr>
                      
                     <% }) %>
@@ -31,10 +45,7 @@
             </tbody>
           </table>
       
-    </div><%- include("template/card") %> 
-<div class="card">
-    
-</div>
+    </div>
     
 
 

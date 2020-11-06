@@ -1,3 +1,4 @@
+//Esquema de conexión entre Mongo y mi app
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
